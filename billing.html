@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - TechLearn</title>
+    <style>
+        /* Styles for billing page */
+        .billing-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .billing-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .billing-container label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .billing-container select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            width: calc(100% - 22px);
+        }
+
+        .billing-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #828282;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .billing-container button:hover {
+            background-color: #2e2e2e;
+        }
+
+        .billing-container .btn-secondary {
+            background-color: #f49585;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .billing-container .btn-secondary:hover {
+            background-color: #ff6347;
+        }
+
+        .billing-container #purchaseSummary {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="billing-container">
+        <h2>Billing</h2>
+        <div id="purchaseSummary"></div>
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod">
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>
+        <button onclick="completePurchase()">Complete Purchase</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

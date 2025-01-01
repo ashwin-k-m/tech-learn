@@ -1,0 +1,129 @@
+#main {
+    width: 100%;
+    height: auto; 
+    padding-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    padding: 20px 0;
+}
+
+.search {
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.search #input {
+    font-size: 13px;
+    flex: 1;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+.course-section {
+    padding: 50px 0;
+    background-color: rgb(235, 235, 235);
+}
+.course-section h3 {
+    font-size: 1.75rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.course-section p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+.course-section h4 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.promo-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+.promo-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+.promo-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #606060;
+}
+.promo-description {
+    font-size: 1.125rem;
+    color: #555;
+    margin-top: 10px;
+}
+.promo-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftcont, .contents, .footer {
+        width: 100%;
+        float: none;
+    }
+
+    .cbmain div {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .im {
+        flex-direction: column;
+    }
+}
