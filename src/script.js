@@ -112,7 +112,7 @@ function applyPromoCode() {
     checkoutSummary.innerHTML += `<p>Total after discounts: $${total.toFixed(2)}</p>`;
 }
 function cticompletePurchase() {
-    window.location.href = 'assets/confirmation.html';
+    window.location.href = 'confirmation.html';
 	clearCart();
 }
 
